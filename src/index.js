@@ -17,11 +17,6 @@ const store = createStore(
 	applyMiddleware(createPromise(), thunk, createLogger())
 );
 
-// + Provider: 
-// - Tüm Redux ın projemizde dahil olabilmesi için oluşturmuş olduğumuz Provider özelliğini App Componenti dışına ekliyoruz. 
-// - Ayrıca oluşturmuş olduğumuz store un her yere ulaşabilmesi için Provider yapısına store ekliyoruz.
-
-// + Router yapısı: Tüm projenin router'ı görebilmesi için bu kısımda provider üzerinde sarmaladık.
 ReactDOM.render(
     <BrowserRouter> 
       <Provider store={store}> 
@@ -31,7 +26,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

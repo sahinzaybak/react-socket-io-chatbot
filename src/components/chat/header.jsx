@@ -1,21 +1,21 @@
-import '../../assets/scss/middle-side/headers.scss'
-import Avatar from 'react-avatar';
+import '../../assets/scss/chat/headers.scss'
 import { Eye, Clock } from 'react-bootstrap-icons';
+import favicon from '../../assets/images/favicon.png'
 
 const Header = () => {
   return (
-    <div className="middle-side__header">
+    <div className="chat__header">
       <div className="d-flex align-items-center">
-        <div className="middle-side__header-avatar">
-          <Avatar className="mr-3" color="indianred" name="Şahin zaybak" size={60} textSizeRatio={0} round={true} />
+        <div className="chat__header-avatar">
+          <img src={favicon} />
         </div>
-        <div className="middle-side__header-info">
+        <div className="chat__header-info">
           <h4>ssttek</h4>
           <p>Cloud, The Internet</p>
         </div>
       </div>
-      <div className="middle-side__header-right d-flex align-items-center">
-        <div className="d-flex mr-5">
+      <div className="chat__header-right">
+        <div className="d-flex mr-4 pr-3">
           <Eye color="#515151" size={25} />
           <p>botty-beep-boop</p>
         </div>

@@ -4,33 +4,36 @@
   flex-direction: column;
   background-color: #f4f8ff;
   overflow-y: scroll;
-  padding: 30px;
+  padding: 25px 30px;
   &-send {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100px;
     &__input {
+      width: 100%;
       height: 100%;
       input {
+        width: 100%;
         height: 100%;
         border: 0;
         padding: 30px;
         font-size: 18px;
+        font-weight: 500;
       }
     }
   }
   &-item{
     width: fit-content;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     padding: 12px 25px;
     margin: 10px 0 10px 0;
     border-radius: 25px;
     word-break: break-word;
     background-color: white;
     border-bottom-left-radius: 0;
-    &:nth-child(2n){
+    &.message-item__me{
       margin-left: auto;
       background-color: #02abf3;
       color: white;

@@ -1,0 +1,17 @@
+.user-info {
+  width: 100%;
+  max-width: 345px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    background-color: #1e2532;
+    img{
+      width: 190px;
+    }
+  }
+}

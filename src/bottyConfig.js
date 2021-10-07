@@ -1,3 +1,3 @@
 export default {
-  BOTTY_SERVER_API: "https://botty.alexgurr.com",
+  BOTTY_SERVER_API: "https://botty-beep-boop.herokuapp.com/",
 };

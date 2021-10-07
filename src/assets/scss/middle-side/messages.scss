@@ -1,0 +1,41 @@
+.message {
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  background-color: #f4f8ff;
+  overflow-y: scroll;
+  padding: 30px;
+  &-send {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    &__input {
+      height: 100%;
+      input {
+        height: 100%;
+        border: 0;
+        padding: 30px;
+        font-size: 18px;
+      }
+    }
+  }
+  &-item{
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 25px;
+    margin: 10px 0 10px 0;
+    border-radius: 25px;
+    word-break: break-word;
+    background-color: white;
+    border-bottom-left-radius: 0;
+    &:nth-child(2n){
+      margin-left: auto;
+      background-color: #02abf3;
+      color: white;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 0;
+    }
+  }
+}
